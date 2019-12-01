@@ -1,7 +1,7 @@
-<template lang="html">
+<template >
   <div>
     <h3>Studio Ghibli films:</h3>
-    <film-select>{{this.films.name}}</film-select>
+    <film-select :films="films"></film-select>
     <film-description></film-description>
 
   </div>
@@ -31,4 +31,8 @@ export default {
 </script>
 
 <style lang="css" scoped>
+body{
+  background-image: url('../public/Totoro.jpeg');
+}
+
 </style>
